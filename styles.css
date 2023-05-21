@@ -16,13 +16,14 @@ a:hover{
     font-size: 49px;
     color: #fff!important;
     margin-top:0px;
+    text-shadow: 1px 1px #0000002e;
   }
   h2{
                         /*    padding-bottom: 20px;*/
 font-size: 28px;
 color: #000F2B;
   }
-p, li{
+p, li {
   font-family: 'Playfair Display', serif;
     font-size: 16px;
     color: #625F5F;
@@ -36,12 +37,23 @@ background-color: #FDDA25;  /* Modern Browsers */
 width: 100px;
 margin-left:0;
 }
+
+.header-hr{margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
+border-top: 2px solid #FDDA25!important;
+width: 100px;
+}
 hr {
-  border: none;
-height: 2px;
-/* Set the hr color */
-color: #FDDA25;  /* old IE */
-background-color: #FDDA25;  /* Modern Browsers */
+  margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
 width: 100px;
 }
   .header{
@@ -82,17 +94,18 @@ margin-top: 54px;
 }
 .heardertext{
   color: #fff;
+  text-shadow: 1px 1px #0000002e;
 }
 .primarycta {
 border: 2px solid #fff;
-padding: 16px 40px 16px;
+padding: 16px 40px 12px;
 color: #fff;
 font-size: 12px;
 margin:0px 24px;
 }
 .primarycta:hover {
 border: 2px solid #0D5A67;
-padding: 16px 40px 16px;
+padding: 16px 40px 12px;
 background: #0D5A67;
 color: #fff;
 transition: 1s;
@@ -100,7 +113,7 @@ text-decoration: none;
 }
 .secondarycta {
 border: 2px solid #fff;
-padding: 16px 40px 16px;
+padding: 16px 40px 12px;
 background: #fff;
 color: #0D5A67;
 font-size: 12px;
@@ -108,7 +121,7 @@ margin:0px 24px;
 }
 .secondarycta:hover {
 border: 2px solid #0D5A67;
-padding: 16px 40px 16px;
+padding: 16px 40px 12px;
 background: #0D5A67;
 color: #fff;
 transition: 1s;
@@ -190,7 +203,7 @@ opacity: 0.5;
 }
 .content-contact{
 background-position: center!important;
-                        background: url(https://uc4ea75f0fd46273e40e3377f9b9.previews.dropboxusercontent.com/p/thumb/AB4PI6LKL95qrASCZkWe-gyDlLT440DZwNuEqFoMx4-YfOv5aYYsjYdTK6lVYtE5W4anng2LMj9jUPk4S1fGmb-7fcGB5_7D282UDfyLwAYqZRuwHc3OzqXPgyNTBj9QiUCYO8mtglUMWq0VJLL24wntCMyDc2NOoIKZmzJlUXsXVPaLkyqfp04nPdTbMqZ0LpXxiM3C8fZ40K_7U0_1r2COyfYt2nbuxTZR6c3s8Nl4XkiTulpxML_JegfAEhITf-k-kz_alpSk9OWQimaDoOy_5IoHHysIACNW6mirBob1Uzb3HFmQDumt1wGit-Zu66NkL7EqkKKhe1cCosoLW-cy7XZntDTZI7sFiFx9d_X3J3j_twsYWKaBjuAtrWGdL63PiMlCjkPKtYZy6mlxfGuzJkcnbohy2MHe8wryYXEwP1-UBXjmrM7U3qjYd7mqnHzsK1qM398HFrReRGF3WoErqtG11Wg2tVlpWNK1JG2GQQ/p.jpeg);
+                        background: url(https://github.com/iordanisch/kirsten/blob/main/get-in-touch.jpg?raw=true);
 }
   body{
 margin: 0 auto;
@@ -285,7 +298,7 @@ padding: 100px 0px;
   color:#fff;
 }
 .testimonial-box{
-  background: url(https://previews.dropbox.com/p/thumb/AB53bKoJSEtdGi1zhB0iS0UlRKdibpr4UCuHjIC7QE8bnhe7UVnsoTYcgxdjTG01ZeWgOpLj2D6wnfAdSGZuKkO0ZXV1PlLtKW5XQNBrYj8S_Q2n7-RcLXlrEaxgLI69w6gd2IoiKM8e6k7TeV4wWHN5zyoKcqT7iwEzBDpzp-9Xlk6NxYE-IuobhPlrjCnDVIelmh8EngBlYqCL1oyPz8_s82ks2LJHtvxwOOUrl4DO4DXSYAEEMn3dCJ-amz87FIdQJUj3J22c-6zhi-m0R9OorTnIe35RcUsl_NDHrzm1EG0EwH6S8asHBm-7u3zE3QJ26VXZYm2nHeSL9UjInO4_TVyb_xPixfLtAau7QtDquwoRt5fchPgV3yXZgv0-GC0/p.jpeg);
+  background: url(https://github.com/iordanisch/kirsten/blob/main/testimonial.jpg?raw=true);
   background-position: center!important;
   background-repeat: no-repeat;
 }
