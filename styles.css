@@ -198,7 +198,7 @@ opacity: 0.5;
 }
 .contact-box{
   padding: 100px 0px;
-  width: 600px;
+  max-width: 600px;
   margin: auto;
 }
 .content-contact{
@@ -333,12 +333,12 @@ width:100%;
   }
 }
 @media only screen and (max-width: 970px) {
-  .additional-box, .content-box {
+  .additional-box, .content-box, .additional-box {
     display: block;
     max-width: 600px;
   }
 
-  .services-box-two, .services-box-one, .goldcrest-img {
+  .services-box-two, .services-box-one, .goldcrest-img, .about-me-box-one, .additional-one, .additional-two  {
   text-align: center;
   width: 100%;
 }
@@ -350,6 +350,27 @@ width:100%;
   max-width: 300px;
   margin: auto;
   padding-bottom: 25px;
+}
+.about-me-box-two {
+  width: 60%;
+  margin: auto;
+  padding-top: 48px;
+}
+.contact-box {
+  width: 70%;
+}
+.footer{
+  display: block;
+  text-align: center;
+}
+.logo-box {
+  padding: 48px 0px;
+}
+.goldcrest-img.img-responsive, .additional-img.img-responsive{
+  max-width: 40%;
+}
+.content-box-small, .content-box, .testimonial-box-small {
+  margin: 0px 16px;
 }
 }
 </style>
