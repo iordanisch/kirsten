@@ -28,6 +28,115 @@ p, li {
     font-size: 16px;
     color: #625F5F;
   }
+
+#nav-icon3{
+  display: none;
+}
+
+#demo {
+  margin: 24px auto;
+}
+
+  #nav-icon3 {
+  width: 40px;
+  height: 45px;
+  position: absolute;
+  margin:20px 0px 0px 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+
+}
+ #nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 68%;
+  background: #0D5A67;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  right: 0;
+  top: 0;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 10px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 20px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+
+
+#navbarid, #askills {
+  position: relative;
+   left: -1600px;
+    -webkit-animation: slide 1.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+
 .services-hr {
   border: none;
 height: 2px;
@@ -38,6 +147,9 @@ width: 100px;
 margin-left:0;
 }
 
+.mobile-logo {
+  display: none;
+}
 .header-hr{margin-top: 20px;
 margin-bottom: 20px;
 border: 0;
@@ -372,11 +484,31 @@ width:100%;
 .content-box-small, .content-box, .testimonial-box-small {
   margin: 0px 16px;
 }
+
+}
+@media only screen and  (max-width:600px) {
 .primarycta {
   display: block;
   margin-bottom: 24px;
 }
 .secondarycta{
+  display: block;
+}
+ .nav-bar{
+  display: none;
+ } 
+ .mobile-logo {
+  display: block!important;
+  margin-bottom: 8px;
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+li {
+  margin: 5px auto;
+}
+#nav-icon3 {
   display: block;
 }
 }

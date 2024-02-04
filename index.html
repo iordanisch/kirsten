@@ -25,13 +25,37 @@
 				<img class="logo" src="https://raw.githubusercontent.com/iordanisch/kirsten/main/Goldcrest-logo-nav.jpg" alt="Goldcrest-Logo">
 			</div>
 			<div class="navigation-options">
-				<a class="nav-text" href="#">HomE</a>
+				<a class="nav-text" href="#">Home</a>
 				<a class="nav-text" href="#about-me-id">About</a>
 				<a class="nav-text" href="#services-id">Services</a>
 				<a class="nav-text" href="#additional-information-id">Information</a>
 				<a class="nav-text" href="#get-in-touch-id">Contact</a>
 			</div>
 		</div>
+
+
+
+
+	<div class="mobile-nav-box">
+		<img class="mobile-logo" src="https://raw.githubusercontent.com/iordanisch/kirsten/main/Goldcrest-logo-nav.jpg" alt="Goldcrest-Logo">
+		<div id="nav-icon3">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</button>
+		<div id="demo" class="hbox" style="display: none";>
+			<ul class="stack">
+				<li><a class="nav-text" href="#">Home</a></li>
+				<li><a class="nav-text" href="#about-me-id">About</a></li>
+				<li><a class="nav-text" href="#services-id">Services</a></li>
+				<li><a class="nav-text" href="#additional-information-id">Information</a></li>
+				<li><a class="nav-text" href="#get-in-touch-id">Contact</a></li>
+		</ul>
+	</div>
+
+
 		<div class="header">
 			<div class="box">
 				<h1>Welcome</h1>
@@ -186,3 +210,41 @@
 		</div>
 	</body>
 </html>
+<script>
+	
+	//fade in effect for nav and header content
+$(document).ready(function () {
+   if ($('body').hasClass('loaded'));
+    else
+        ($('#navbarid').fadeIn(3000));
+    ($('.headerbox').fadeIn(3000));
+    ($('.skills').fadeIn(3000));
+    
+   
+});
+
+
+
+$(document).ready(function(){
+  $("body").mouseup(function(){ 
+  	 $("#demo").hasClass('in');{
+  	 	$('.mobile-nav-box').addClass('mob-but-men');
+  	 }
+  });
+});
+
+//mobile menu icon
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+//slide down menu
+$(document).ready(function(){
+  $("#nav-icon3").click(function(){
+    $("#demo").slideToggle("slow");
+  });
+});
+
+</script>
