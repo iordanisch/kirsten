@@ -501,7 +501,7 @@ width:100%;
  } 
  .mobile-logo {
   display: block!important;
-  margin-bottom: 8px;
+  margin: 8px auto;
 }
 ul{
   list-style: none;
