@@ -372,5 +372,12 @@ width:100%;
 .content-box-small, .content-box, .testimonial-box-small {
   margin: 0px 16px;
 }
+.primarycta {
+  display: block;
+  margin-bottom: 24px;
+}
+.secondarycta{
+  display: block;
+}
 }
 </style>
