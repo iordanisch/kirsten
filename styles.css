@@ -29,6 +29,10 @@ p, li {
     color: #625F5F;
   }
 
+  .mobile-logo {
+  display: none;
+}
+
 #nav-icon3{
   display: none;
 }
@@ -147,9 +151,7 @@ width: 100px;
 margin-left:0;
 }
 
-.mobile-logo {
-  display: none;
-}
+
 .header-hr{margin-top: 20px;
 margin-bottom: 20px;
 border: 0;
