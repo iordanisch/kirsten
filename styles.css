@@ -393,6 +393,7 @@ transition: 1s;
 }
 #result{
   color: #fff;
+  text-shadow: 1px 1px #0000002e;
 }
 
 /*------------end of form styling------------*/
