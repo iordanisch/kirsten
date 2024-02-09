@@ -373,6 +373,82 @@ background: #0D5A67;
 color: #fff;
 transition: 1s;
 }
+
+
+/*form styling*/
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+  text-align: left;
+  color: #dc3545;
+  font-weight: bold;
+  text-shadow: 1px 1px #00000054;
+  top: -5px;
+  position: relative;
+
+}
+#result{
+  color: #fff;
+}
+
+/*------------end of form styling------------*/
+
+
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+  text-align: left;
+  color: #dc3545;
+    font-weight: bold;
+    text-shadow: 1px 1px #00000054;
+    top: -5px;
+  position: relative;
+
+}
+
+
+.is-invalid,
+.was-validated :invalid {
+    border: 2px solid #dc3545!important;
+}
+
+.send-button{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  outline: 0;
+  background: none;
+  color: #fff;
+}
+
+.send-button:hover{
+ border: 2px solid #0D5A67;
+background: #0D5A67;
+color: #fff;
+transition: 1s;
+}
+
+
 .additional-one{
   text-align: left;
   width: 65%;
@@ -513,5 +589,6 @@ li {
 #nav-icon3 {
   display: block;
 }
-}
+
+
 </style>
