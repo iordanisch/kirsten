@@ -430,7 +430,7 @@ transition: 1s;
 }
 
 .send-button{
-  width: 100%;
+  width: 100%!important;
   padding: 12px;
   margin: 8px 0;
   display: inline-block;
