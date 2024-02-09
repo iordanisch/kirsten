@@ -139,7 +139,7 @@
 						<input type="number" id="phone" name="phone" placeholder="Please enter your phone number.. (optional)">
 						<!-- <label for="message">Message</label> -->
 						<textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Please enter your message.." required></textarea>
-						<input class="submitcta" type="submit" value="SEND" onclick="submit_form();" />
+						<input class="submitcta" type="submit" value="SEND" >
 					</form>
 				</div>
 			</div>
@@ -250,7 +250,7 @@ $(document).ready(function(){
 
 //form submission
 function submit_form() {
-document.formu1.submit();
-document.formu1.reset(); 
+document.formu1.reset();
+return false; 
 }
 </script>
