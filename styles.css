@@ -559,9 +559,9 @@ width:100%;
 .goldcrest-img.img-responsive, .additional-img.img-responsive{
   max-width: 40%;
 }
-.content-box-small, .content-box, .testimonial-box-small {
+/*.content-box-small, .content-box, .testimonial-box-small {
   margin: 0px 16px;
-}
+}*/
 
 }
 @media only screen and  (max-width:600px) {
