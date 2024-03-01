@@ -440,6 +440,7 @@ transition: 1s;
   outline: 0;
   background: none;
   color: #fff;
+  padding: 12px 0px 8px 0px;
 }
 
 .send-button:hover{
