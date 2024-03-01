@@ -32,6 +32,37 @@ p, li {
   display: none;
 }
 
+.TopButton {
+    /*top: 540px;*/
+    top: 90%;
+position: fixed;
+right: 15px;
+}
+
+.testbox{
+  display: flex;
+width: 100%;
+justify-content: flex-end;
+
+}
+
+.fa-caret-up {
+    font-size: 40px;
+    color: #0D5A67;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+.fa-caret-up:hover {
+    background: #0D5A67;
+    color: #fff;
+    padding: 0px 14px 8px 13px;
+    border-radius: 50px;
+     transition: 1s;
+     font-size: 50px;
+     box-shadow: 2px 2px 4px #00000080;
+}
+
 #nav-icon3{
   display: none;
 }

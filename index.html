@@ -19,10 +19,15 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<title>Home - Goldcrest Therapy and Coaching</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js"></script>
-		<script src="my.js"></script>
+		<!-- <script src="my.js"></script> -->
 		<script src="https://kit.fontawesome.com/e11ff565e8.js" crossorigin="anonymous"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 	</head>
 	<body>
+<div id="atestbox" class="testbox">
+			<div id="TopButtona" class="TopButton"><a href="#atestbox"><i class="fas fa-caret-up"></i></a>
+		</div>
+	</div>
 		<div class="nav-bar">
 			<div class="nav-box">
 				<img class="logo" src="https://raw.githubusercontent.com/iordanisch/kirsten/main/Goldcrest-logo-nav.jpg" alt="Goldcrest-Logo">
@@ -247,6 +252,73 @@
 	</body>
 </html>
 <script>
+
+// arrow apear after scrolling
+$(function() {
+
+  $('#atestbox').hide();
+
+ $(window).scroll(function() {
+
+  var scroll = $(window).scrollTop();
+
+  if (scroll >=900) {
+
+  
+  $('#atestbox').fadeIn();
+
+  } else {
+
+ 
+  $('#atestbox').fadeOut();
+
+ }
+
+  });
+
+})
+	//smooth scrolling
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+
+
+
+// arrow apear after scrolling
+$(function() {
+
+  $('#atestbox').hide();
+
+ $(window).scroll(function() {
+
+  var scroll = $(window).scrollTop();
+
+  if (scroll >=900) {
+
+  
+  $('#atestbox').fadeIn();
+
+  } else {
+
+ 
+  $('#atestbox').fadeOut();
+
+ }
+
+  });
+
+})
 	
 	//fade in effect for nav and header content
 $(document).ready(function () {
@@ -258,6 +330,8 @@ $(document).ready(function () {
     
    
 });
+
+
 
 $(document).ready(function(){
   $("body").mouseup(function(){ 
