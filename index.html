@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta http-equiv='cache-control' content='no-cache'> 
-		<meta http-equiv='expires' content='0'> 
-		<meta http-equiv='pragma' content='no-cache'>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +16,10 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<title>Home - Goldcrest Therapy and Coaching</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js"></script>
-		<!-- <script src="my.js"></script> -->
+		<script src="my.js"></script>
 		<script src="https://kit.fontawesome.com/e11ff565e8.js" crossorigin="anonymous"></script>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 	</head>
 	<body>
-<div id="atestbox" class="testbox">
-			<div id="TopButtona" class="TopButton"><a href="#atestbox"><i class="fas fa-caret-up"></i></a>
-		</div>
-	</div>
 		<div class="nav-bar">
 			<div class="nav-box">
 				<img class="logo" src="https://raw.githubusercontent.com/iordanisch/kirsten/main/Goldcrest-logo-nav.jpg" alt="Goldcrest-Logo">
@@ -40,6 +32,10 @@
 				<a class="nav-text" href="#get-in-touch-id">Contact</a>
 			</div>
 		</div>
+
+
+
+
 	<div class="mobile-nav-box">
 		<img class="mobile-logo" src="https://raw.githubusercontent.com/iordanisch/kirsten/main/Goldcrest-logo-nav.jpg" alt="Goldcrest-Logo">
 		<div id="nav-icon3">
@@ -141,7 +137,7 @@
               <!-- <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name</label> -->
               <input type="text" name="name" id="first_name" placeholder="Full name" required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
               <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-                Please enter your full name.
+                Please provide your full name.
               </div>
             </div>
                </div>
@@ -151,10 +147,10 @@
               <!-- <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label> -->
               <input type="email" name="email" id="email" placeholder="Email address " required class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
               <div class="empty-feedback text-red-400 text-sm mt-1">
-                Please enter your email address.
+                Please provide your email address.
               </div>
               <div class="invalid-feedback text-red-400 text-sm mt-1">
-                Please enter a valid email address.
+                Please provide a valid email address.
               </div>
             </div>
 
@@ -163,7 +159,7 @@
               <input type="text" name="phone" id="phone" placeholder="Contact number (optional)">
 
               <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-                Please enter your phone number.
+                Please provide your phone number.
               </div>
             </div>
           </div>
@@ -249,77 +245,53 @@
 			<p style="text-align: center; color: #fff;">Copyright © 2023 Goldcrest Therapy and Coaching</p>
 			<br>
 		</div>
+<div class="toast">
+        <div class="toast-content">
+            <img class="vacation" src="/home/iordanis/Desktop/vacations.jpg" alt="">
+            <div class="message">
+                <h3>I'm on holiday</h3>
+                <p>I will be on holiday from <strong>Tuesday the 13th of August</strong> until <strong>Wednesday the 4th</strong> of September.</p>
+            </div>
+        </div>
+        <i class="uil uil-multiply toast-close"></i>
+        <div class="progress"></div>
+    </div>
+
 	</body>
 </html>
 <script>
+	
+//Toast notification
+	document.addEventListener("DOMContentLoaded", function() {
+    var toast = document.querySelector(".toast");
+    var close = document.querySelector(".toast-close");
+    var progress = document.querySelector(".progress");
 
-// arrow apear after scrolling
-$(function() {
+    // Show the toast after 1 second
+    setTimeout(() => {
+        toast.classList.add("active");
+        progress.classList.add("active");
 
-  $('#atestbox').hide();
+        setTimeout(() => {
+            toast.classList.remove("active");
+        }, 5000);
 
- $(window).scroll(function() {
+        setTimeout(() => {
+            progress.classList.remove("active");
+        }, 5300);
+    }, 1000); // 1000 milliseconds = 1 second
 
-  var scroll = $(window).scrollTop();
+    close.addEventListener("click", () => {
+        toast.classList.remove("active");
 
-  if (scroll >=900) {
-
-  
-  $('#atestbox').fadeIn();
-
-  } else {
-
- 
-  $('#atestbox').fadeOut();
-
- }
-
-  });
-
-})
-	//smooth scrolling
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
+        setTimeout(() => {
+            progress.classList.remove("active");
+        }, 300);
+    });
 });
 
 
 
-// arrow apear after scrolling
-$(function() {
-
-  $('#atestbox').hide();
-
- $(window).scroll(function() {
-
-  var scroll = $(window).scrollTop();
-
-  if (scroll >=900) {
-
-  
-  $('#atestbox').fadeIn();
-
-  } else {
-
- 
-  $('#atestbox').fadeOut();
-
- }
-
-  });
-
-})
-	
 	//fade in effect for nav and header content
 $(document).ready(function () {
    if ($('body').hasClass('loaded'));
