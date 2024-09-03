@@ -270,8 +270,8 @@ margin-left:0;
 }
 
 
-.header-hr{margin-top: 20px;
-margin-bottom: 20px;
+.header-hr{
+  margin: 20px auto;
 border: 0;
   border-top-color: currentcolor;
   border-top-style: none;
