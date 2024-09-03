@@ -642,6 +642,10 @@ width:100%;
   .additional-box, .content-box {
     max-width: 970px;
   }
+  :root{
+  color-scheme: light only;
+}
+
 }
 @media only screen and (max-width: 970px) {
   .additional-box, .content-box, .additional-box {
@@ -684,6 +688,10 @@ margin: auto 5px;
 .goldcrest-img.img-responsive, .additional-img.img-responsive{
   max-width: 40%;
 }
+:root{
+  color-scheme: light only;
+}
+
 /*.content-box-small, .content-box, .testimonial-box-small {
   margin: 0px 16px;
 }*/
@@ -714,6 +722,10 @@ li {
 #nav-icon3 {
   display: block;
 }
+:root{
+  color-scheme: light only;
+}
 
+}
 
 </style>
