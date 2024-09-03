@@ -653,6 +653,10 @@ width:100%;
 .services-hr {
   margin: 20px auto;
 }
+
+.content-box-small, .content-box, .testimonial-box-small{
+margin: auto 5px;
+}
 .goldcrest-img {
   max-width: 300px;
   margin: auto;
