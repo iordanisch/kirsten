@@ -290,28 +290,25 @@
     });
 });
 
-
-
-	//fade in effect for nav and header content
-$(document).ready(function () {
-   if ($('body').hasClass('loaded'));
-    else
-        ($('#navbarid').fadeIn(3000));
-    ($('.headerbox').fadeIn(3000));
-    ($('.skills').fadeIn(3000));
-    
-   
-});
-
-
-
+//smooth scrolling
 $(document).ready(function(){
-  $("body").mouseup(function(){ 
-  	 $("#demo").hasClass('in');{
-  	 	$('.mobile-nav-box').addClass('mob-but-men');
-  	 }
-  });
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
 });
+
+
+
+
 
 //mobile menu icon
 $(document).ready(function(){
