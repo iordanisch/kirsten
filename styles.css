@@ -729,7 +729,7 @@ margin: auto 5px;
 .secondarycta{
   display: block;
 }
- .nav-bar{
+ .nav-bar, .TopButton {
   display: none;
  } 
  .mobile-logo {
