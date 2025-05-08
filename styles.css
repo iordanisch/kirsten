@@ -319,7 +319,7 @@ width: 100px;
     height: 600px;
     display: flex;
     background-position: center!important;
-                        background: url(https://github.com/iordanisch/kirsten/blob/main/header-img.jpg?raw=true);
+                        background: url(https://raw.githubusercontent.com/iordanisch/kirsten/refs/heads/main/header-img.jpg);
   }
   .nav-text{
     font-family: 'Playfair Display', serif;
@@ -461,7 +461,7 @@ opacity: 0.5;
 }
 .content-contact{
 background-position: center!important;
-                        background: url(https://github.com/iordanisch/kirsten/blob/main/get-in-touch.jpg?raw=true);
+                        background: url(https://raw.githubusercontent.com/iordanisch/kirsten/refs/heads/main/get-in-touch.jpg);
 }
   body{
 margin: 0 auto;
@@ -633,7 +633,7 @@ padding: 100px 0px;
   color:#fff;
 }
 .testimonial-box{
-  background: url(https://github.com/iordanisch/kirsten/blob/main/testimonial.jpg?raw=true);
+  background: url(https://raw.githubusercontent.com/iordanisch/kirsten/refs/heads/main/testimonial.jpg);
   background-position: center!important;
   background-repeat: no-repeat;
 }
